@@ -17,51 +17,16 @@
     </header>
     <main class="graficos-section">
         <section id="graficos-container" class="graficos-container">
+            <!-- crie os gráficos/texto aqui -->
         </section>
     </main>
     <footer>
-        <p>Desenvolvido por Mylla Vitória</p>
+        <p>Desenvolvido por Gui Lima</p>
     </footer>
     <script type="module" src="graficos/common.js"></script>
     <script type="module" src="graficos/informacoesGlobais.js"></script>
     <script type="module" src="graficos/quantidadeUsuarios.js"></script>
+    <script type="module" src="graficos/redesFavoritasMundo.js"></script>
+
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gráfico com Chart.js</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-<body>
-    <h1>Gráfico de Redes Sociais </h1>
-    <canvas id="Graficos" width="400" height="200"></canvas>
-
-    <script>
-        const ctx = document.getElementById('meuGrafico').getContext('2d');
-        const meuGrafico = new Chart(ctx, {
-            type: 'bar', // tipo de Redes Sociais
-            data: {
-                labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio'],
-                datasets: [{
-                    label: 'Graficos',
-                    data: [12, 19, 3, 5, 2],
-                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                    borderColor: 'rgba(75, 192, 192, 1)',
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-    </script>
-</body>
-</html>
-
